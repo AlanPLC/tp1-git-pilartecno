@@ -6,7 +6,7 @@
 */
 
 function extractValues(data) {
-  // Tu código aquí
+  return Object.values(data);
 }
 
 /*  
@@ -18,7 +18,12 @@ function extractValues(data) {
 */
 
 function arrayToLengthCounters(array) {
-  // Tu código aquí
+  const objeto = {}
+  for (i=0; i<array.length; i++){
+    const animal = array[i]
+    objeto[animal] = animal.length
+  }
+  return objeto
 }
 
 /*  
